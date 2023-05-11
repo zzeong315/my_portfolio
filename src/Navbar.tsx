@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useMatch } from "react-router-dom";
 
 const Navbar = () => {
+  const projectMatch = useMatch('/project/*');
+  const AboutMatch = useMatch('about');
+
   return (
     <nav className="flex justify-between items-center h-[10vh] px-12 bg-bgLight text-darkText">
       <div>
@@ -10,8 +13,8 @@ const Navbar = () => {
         </Link>
       </div>
       <ul className="flex space-x-8">
-        <li><Link to="/project">Project</Link></li>
-        <li><Link to="/about">About</Link></li>
+        <li className={projectMatch ? "text-myPurple hover:text-myPink" : "hover:text-myPink"}><Link to="/project">Project</Link></li>
+        <li className={AboutMatch ? "text-myPurple hover:text-myPink" : "hover:text-myPink"}><Link to="/about">About</Link></li>
       </ul>
     </nav>
   );
