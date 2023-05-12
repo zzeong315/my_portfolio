@@ -14,7 +14,7 @@ interface ProjectListProps {
 const ProjectList = ({title, team, description, bgColor, link, logo, addClassName}:ProjectListProps) => {
   return (
     <li>
-      <div className={`h-[18vh] grid grid-cols-2 justify-center items-center ${bgColor}`}>
+      <div className={`h-[18vh] grid grid-cols-2 justify-center items-center ${bgColor} hover:opacity-80`}>
         <Link to={link} className="flex ml-10 items-center">
           {logo}
           <div className={`text-5xl font-medium ml-2 ${addClassName}`}>{title}</div>
