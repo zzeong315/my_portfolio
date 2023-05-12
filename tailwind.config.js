@@ -21,7 +21,24 @@ module.exports = {
       },
       backgroundImage: {
         'profile1': "url('/public/image/profile1.jpeg')",
-      }
+        'profile2': "url('/public/image/profile2.jpeg')",
+        'profile3': "url('/public/image/profile3.png')",
+      },
+      animation: {
+        'spin-slow': 'spin 15s linear infinite',
+        'wiggle': 'wiggle 3s ease-in-out infinite',
+        'bounce-slow': 'bounce 3s infinite',
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(25deg)' },
+          '50%': { transform: 'rotate(12deg)' },
+        },
+        bounce : {
+          '0%, 100%': { transform: "translateY(-20%)"},
+          "50%": { transform: "translateY(0)" },
+        },
+      },
     },
   },
   variants: {
