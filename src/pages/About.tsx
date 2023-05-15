@@ -12,15 +12,15 @@ import { my_Data } from "../myData";
 
 const About = () => {
   return (
-    <div className="grid grid-cols-2 h-[90vh] w-full font-notoKR">
-      <div className="bg-myOrange px-12 py-16 flex flex-col items-center relative">
+    <div className="flex flex-col h-auto md:grid md:grid-cols-2 md:h-[90vh] w-full font-notoKR">
+      <div className="bg-myOrange px-6 py-8 md:px-12 md:py-16 flex flex-col items-center relative">
         <h1 className="text-6xl font-bold text-center mb-10">About Me</h1>
-        <div className="text-2xl font-semibold mb-8 text-center">
+        <div className="text-xl sm:text-2xl font-semibold mb-8 text-center">
           {my_Data.introduction.map((i, _) => (
             <p key={_}>{i}</p>
           ))}
         </div>
-        <div className="text-base whitespace-pre-line leading-relaxed px-5 mb-6">
+        <div className="text-base whitespace-pre-line leading-relaxed px-3 sm:px-5 mb-6">
           <ul>
             {my_Data.mainDescription.map((i, _) => (
               <li key={_} className="flex items-center font-semibold">
@@ -46,15 +46,15 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-rows-5">
-        <div className="bg-myBlue row-span-3 flex p-10 relative group">
-          <div className="w-[40%] h-[50%] bg-emerald-400 rounded-xl absolute top-10 bg-profile1 bg-cover bg-center">
+      <div className="grid sm:grid-rows-5">
+        <div className="bg-myBlue sm:row-span-3 flex justify-center p-10 relative group">
+          <div className="hidden sm:block w-[40%] h-[50%] bg-emerald-400 rounded-xl absolute top-10 left-10 bg-profile1 bg-cover bg-center">
             <div className="border-dashed border-4 border-emerald-400 w-[100%] h-[100%] rounded-xl"></div>
           </div>
-          <div className="w-[40%] h-[50%] bg-amber-100 rounded-full absolute bottom-10 left-48 z-10 bg-profile3 bg-cover bg-center">
+          <div className="w-[80%] h-[30vh] place-self-center sm:w-[40%] sm:h-[50%] bg-amber-100 rounded-full sm:absolute sm:bottom-10 sm:left-48 z-10 bg-profile3 bg-cover bg-center">
             <div className="border-dashed border-4 border-amber-400 w-[100%] h-[100%] rounded-full"></div>
           </div>
-          <div className="w-[40%] h-[50%] bg-red-400 rounded-3xl absolute top-20 right-10 bg-profile2 bg-cover bg-center">
+          <div className="hidden sm:block w-[40%] h-[50%] bg-red-400 rounded-3xl absolute top-20 right-10 bg-profile2 bg-cover bg-center">
             <div className="border-dashed border-4 border-pink-400 w-[100%] h-[100%] rounded-3xl"></div>
           </div>
           <div className="absolute bottom-20 left-20 z-10 group-hover:animate-spin-slow">
@@ -64,8 +64,8 @@ const About = () => {
             <Butterfly strokeColor="yellow" />
           </div>
         </div>
-        <div className="row-span-2 grid grid-cols-3 w-full">
-          <div className="bg-myPink w-full col-span-2 py-6 px-12 group">
+        <div className="sm:row-span-2 md:grid md:grid-cols-3 w-full">
+          <div className="bg-myPink w-full col-span-1 md:col-span-2 py-6 px-6 md:px-12 group">
             <div className="flex mb-4 items-center">
               <div className="group-hover:animate-wiggle">
                 <Message />

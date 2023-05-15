@@ -37,11 +37,11 @@ const ProjectDetail = ({
   addClassName,
 }: ProjectDetailProps) => {
   return (
-    <div className={`${color} grid grid-cols-3 h-[60vh]`}>
+    <div className={`${color} flex flex-col md:grid md:grid-cols-3 md:h-[70vh]`}>
       <div className="col-span-1 self-end justify-self-end p-2">
         <div className="flex justify-center items-center mb-4">
           {logo ? logo : null}
-          <h1 className={`text-[3.5rem] font-medium font-notoKR ${addClassName}`}>{title}</h1>
+          <h1 className={`text-[2.8rem] md:text-[3.5rem] font-medium font-notoKR ${addClassName}`}>{title}</h1>
         </div>
         <div className=" text-darkText flex flex-col items-end my-2 mr-6 space-y-1">
           <div className="flex space-x-1">
@@ -113,7 +113,7 @@ const ProjectDetail = ({
           </div>
           <div className="flex flex-col items-center col-span-2">
             <p className="font-semibold mb-1">Front-end</p>
-            <div className="text-sm flex flex-col items-center">
+            <div className="text-xs md:text-sm flex flex-col items-center">
               {frontEnd.map((i) => (
                 <p key={i}>{i}</p>
               ))}
@@ -121,7 +121,7 @@ const ProjectDetail = ({
           </div>
           <div className="flex flex-col items-center col-span-2">
             <p className="font-semibold mb-1">Back-end</p>
-            <div className="text-sm flex flex-col items-center">
+            <div className="text-xs md:text-sm flex flex-col items-center">
               {backEnd.map((i) => (
                 <p key={i}>{i}</p>
               ))}
@@ -130,7 +130,7 @@ const ProjectDetail = ({
           {AI ? (
             <div className="flex flex-col items-center col-span-2">
               <p className="font-semibold mb-1">AI</p>
-              <div className="text-sm flex flex-col items-center">
+              <div className="text-xs md:text-sm flex flex-col items-center">
                 {AI?.map((i) => (
                   <p key={i}>{i}</p>
                 ))}

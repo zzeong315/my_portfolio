@@ -22,8 +22,8 @@ const WouldU = () => {
         AI={project_WouldU.techStack.AI}
         color={"bg-myPurple"}
       />
-      <div className="bg-myOrange flex p-10">
-        <div className="flex flex-col w-[60%] h-[410px] overflow-y-auto border-2 border-amber-400 shadow-lg">
+      <div className="bg-myOrange p-8 lg:flex lg:p-10">
+        <div className="flex flex-col w-[100%] overflow-x-auto lg:w-[60%] h-[410px] lg:overflow-y-auto border-2 border-amber-400 shadow-lg lg:justify-self-center">
           {project_WouldU.img1?.map((i, _) => (
             <img
               key={_}
@@ -32,7 +32,7 @@ const WouldU = () => {
             />
           ))}
         </div>
-        <div className="w-[40%] px-8">
+        <div className="lg:w-[40%] lg:px-8 mt-8 lg:mt-0">
           <h1 className="font-poppin text-[2.3rem] font-bold mb-4">
             {`Home & Schedule & Diary`}
           </h1>
@@ -53,16 +53,16 @@ const WouldU = () => {
           </p>
         </div>
       </div>
-      <div className="bg-bgDark font-notoKR flex justify-around items-center p-12">
-        <div>
-          <h1 className=" text-3xl font-semibold mb-4">교환일기를 위한 친구연결</h1>
+      <div className="bg-bgDark font-notoKR lg:flex lg:justify-around items-center p-8 lg:p-12">
+        <div className="lg:mx-10">
+          <h1 className="text-3xl font-semibold mb-4">교환일기를 위한 친구연결</h1>
           <div className="text-base space-y-1 font-notoKR mb-3">
             <p>✓ 친구 코드로 친구 요청을 함</p>
             <p>✓ 받은 친구 신청 조회하여 친구 신청 수락하거나 거절할 수 있음</p>
             <p>✓ 친구를 끊는 것도 가능</p>
           </div>
         </div>
-        <div className="flex space-x-2">
+        <div className="flex space-x-2 w-[100%] overflow-x-auto lg:w-auto mt-8 lg:mt-0">
           {project_WouldU.img2?.map((i, _) => (
             <img
               key={_}
@@ -72,8 +72,8 @@ const WouldU = () => {
           ))}
         </div>
       </div>
-      <div className="bg-myPink font-notoKR flex justify-around p-12">
-        <div className="flex space-x-12">
+      <div className="bg-myPink font-notoKR lg:flex lg:justify-around p-8 lg:p-12">
+        <div className="flex lg:space-x-12 w-[100%] overflow-x-auto space-x-2 lg:w-auto">
           {project_WouldU.img3?.map((i, _) => (
             <img
               key={_}
@@ -82,8 +82,8 @@ const WouldU = () => {
             />
           ))}
         </div>
-        <div className="self-end">
-          <h1 className="text-xl font-semibold mb-4">담당부분</h1>
+        <div className="lg:mx-10 self-end">
+          <h1 className="text-xl font-semibold mb-4 mt-8">담당부분</h1>
           <ul>
             {project_WouldU.responsiblePart?.map((i, _) => (
               <li key={_} className="text-base pb-2"> ✓ {i}</li>

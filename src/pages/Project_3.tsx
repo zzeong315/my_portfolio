@@ -18,8 +18,8 @@ const PortfolioShare = () => {
         color={"bg-myOrange"}
         addClassName={"mx-4"}
       />
-      <div className="bg-myGreen font-notoKR p-12 flex justify-around items-center">
-        <div>
+      <div className="bg-myGreen font-notoKR p-12 md:flex md:justify-around items-center">
+        <div className="mb-8 md:mb-0">
           <h1 className="font-poppin text-5xl font-bold mb-2">Portfolio Share</h1>
           <p className="text-sm">회원가입, 로그인, 나의 페이지, 나의 정보 수정, 네트워크 등</p>
           <p className="text-slate-800 text-xs">※ 더 자세한 내용은 위에 '더 자세한 내용 보러가기' 노션 링크를 통해 보실 수 있습니다.</p>
@@ -35,15 +35,15 @@ const PortfolioShare = () => {
           </ul>
         </div>
       </div>
-      <div className="bg-bgDark flex p-12 justify-around">
-        <div className="flex flex-col space-y-4">
+      <div className="bg-bgDark md:flex md:justify-around p-8 lg:p-12">
+        <div className="flex flex-col space-y-4 mb-8">
           <h1 className="font-medium text-xl">{`► 나의 페이지 & Education`}</h1>
-          <div className="flex space-x-12">
+          <div className="lg:flex lg:space-x-8">
             {project_PortfolioShare.img1?.map((i, _) => (
               <img
                 key={_}
                 src={`${process.env.PUBLIC_URL}${i}`}
-                className="w-80 rounded-md shadow-xl"
+                className="w-80 rounded-md shadow-xl mb-4 lg:mb-0"
               />
             ))}
           </div>

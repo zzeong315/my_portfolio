@@ -20,8 +20,8 @@ const ShareMe = () => {
         color={"bg-myPink"}
         addClassName={"mx-4"}
       />
-      <div className="bg-myBlue p-16 flex justify-around font-notoKR">
-        <div className="flex space-x-12">
+      <div className="bg-myBlue p-8 lg:p-16 lg:flex lg:justify-around font-notoKR">
+        <div className="flex w-[100%] overflow-x-auto space-x-2 lg:space-x-12 lg:w-auto">
           {project_ShareMe.img1?.map((i, _) => (
             <img
               key={_}
@@ -30,7 +30,7 @@ const ShareMe = () => {
             />
           ))}
         </div>
-        <div className="mx-10 self-end">
+        <div className="mt-8 self-end lg:ml-8">
           <h1 className="font-poppin text-5xl font-bold mb-4">SNS Service</h1>
           <div className="text-base space-y-1 font-notoKR mb-3">
             <p>✓ 사용자가 메세지를 작성할 수 있음</p>
@@ -45,8 +45,8 @@ const ShareMe = () => {
           </p>
         </div>
       </div>
-      <div className="bg-bgDark font-notoKR flex justify-around p-16">
-        <div className="mx-10 self-end">
+      <div className="bg-bgDark font-notoKR lg:flex lg:justify-around p-8 lg:p-16">
+        <div className="lg:mx-10 self-end">
           <h1 className="font-poppin text-5xl font-bold mb-4">User</h1>
           <div className="text-base space-y-1 font-notoKR mb-3">
             <p>✓ 회원가입, 로그인 통해 사용자의 정보 생성, 확인 가능</p>
@@ -58,7 +58,7 @@ const ShareMe = () => {
             코드샌드박스를 이용해주세요.
           </p>
         </div>
-        <div className="flex space-x-12">
+        <div className="flex w-[100%] overflow-x-auto space-x-2 lg:space-x-12 mt-8 lg:mt-0">
           {project_ShareMe.img2?.map((i, _) => (
             <img
               key={_}

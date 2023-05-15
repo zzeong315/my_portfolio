@@ -20,8 +20,8 @@ const GreenPlogging = () => {
         color={"bg-myGreen"}
         addClassName={"mx-4"}
       />
-      <div className="bg-myBlue px-12 py-16 flex justify-around">
-        <div className="flex space-x-12">
+      <div className="bg-myBlue p-8 lg:p-16 lg:flex justify-around font-notoKR">
+        <div className="flex w-[100%] overflow-x-auto space-x-2 lg:w-auto lg:space-x-12">
           {project_GreenPlogging.img1?.map((i, _) => (
             <img
               key={_}
@@ -30,8 +30,8 @@ const GreenPlogging = () => {
             />
           ))}
         </div>
-        <div>
-          <h1 className=" text-4xl font-semibold mb-4 font-poppin">{`Reservation & Review & Search`}</h1>
+        <div className="mt-8 lg:mt-0 lg:ml-8">
+          <h1 className="text-4xl font-semibold mb-4 font-poppin">{`Reservation & Review & Search`}</h1>
           <div className="text-base space-y-1 font-notoKR mb-3">
             <p className="font-semibold text-lg">모임(Reservation)</p>
             <p>
@@ -49,8 +49,8 @@ const GreenPlogging = () => {
           </p>
         </div>
       </div>
-      <div className="bg-bgDark font-notoKR p-16 flex justify-around">
-        <div className="self-end">
+      <div className="bg-bgDark p-8 lg:p-16 lg:flex justify-around font-notoKR">
+        <div className="self-end mb-8 lg:mb-4">
           <h1 className="text-xl font-semibold mb-4">담당부분</h1>
           <ul>
             {project_GreenPlogging.responsiblePart?.map((i, _) => (
@@ -64,7 +64,7 @@ const GreenPlogging = () => {
             보실 수 있습니다.
           </p>
         </div>
-        <div className="flex space-x-12">
+        <div className="flex w-[100%] overflow-x-auto space-x-2 lg:w-auto lg:space-x-12">
           {project_GreenPlogging.img2?.map((i, _) => (
             <img
               key={_}
