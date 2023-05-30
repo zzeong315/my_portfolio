@@ -113,7 +113,7 @@ const ProjectDetail = ({
           </div>
           <div className="flex flex-col items-center col-span-2">
             <p className="font-semibold mb-1">Front-end</p>
-            <div className="text-xs md:text-sm flex flex-col items-center">
+            <div className="text-xs md:text-sm flex flex-col items-center break-all px-2 text-center">
               {frontEnd.map((i) => (
                 <p key={i}>{i}</p>
               ))}
@@ -121,7 +121,7 @@ const ProjectDetail = ({
           </div>
           <div className="flex flex-col items-center col-span-2">
             <p className="font-semibold mb-1">Back-end</p>
-            <div className="text-xs md:text-sm flex flex-col items-center">
+            <div className="text-xs md:text-sm flex flex-col items-center break-all px-2 text-center">
               {backEnd.map((i) => (
                 <p key={i}>{i}</p>
               ))}
@@ -130,7 +130,7 @@ const ProjectDetail = ({
           {AI ? (
             <div className="flex flex-col items-center col-span-2">
               <p className="font-semibold mb-1">AI</p>
-              <div className="text-xs md:text-sm flex flex-col items-center">
+              <div className="text-xs md:text-sm flex flex-col items-center break-all px-2 text-center">
                 {AI?.map((i) => (
                   <p key={i}>{i}</p>
                 ))}
